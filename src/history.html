@@ -84,7 +84,7 @@
                         </div>
                     </div>
 
-                    <a id="view-statistics-btn" class="btn rounded-5 text-black" style="background-color: aquamarine;">Xem thống kê</a>
+                    <a id="view-statistics-btn2" class="btn rounded-5 text-black view-statistics-btn" style="background-color: aquamarine;">Xem thống kê</a>
 
                 </div>
 
@@ -184,7 +184,7 @@
                         </div>
                     </div>
 
-                    <a id="view-statistics-btn" class="btn rounded-5 text-black" style="background-color: aquamarine;">Xem thống kê</a>
+                    <a id="view-statistics-btn2" class="btn rounded-5 text-black view-statistics-btn" style="background-color: aquamarine;">Xem thống kê</a>
 
                 </div>
 
@@ -283,7 +283,7 @@
                         </div>
                     </div>
 
-                    <a id="view-statistics-btn" class="btn rounded-5 text-black" style="background-color: aquamarine;">Xem thống kê</a>
+                    <a id="view-statistics-btn2" class="btn rounded-5 text-black view-statistics-btn" style="background-color: aquamarine;">Xem thống kê</a>
 
                 </div>
 
@@ -476,10 +476,12 @@
 
     <!-- Template Javascript -->
     <script>
-        const viewStatisticsBtn = document.getElementById("view-statistics-btn");
+        const viewStatisticsBtns = document.querySelectorAll(".view-statistics-btn"); // Select all elements with the class
     
-        viewStatisticsBtn.addEventListener("click", () => {
-            window.location.href = "statistics.html";
+        viewStatisticsBtns.forEach(button => {
+            button.addEventListener("click", () => {
+                window.location.href = "statistics.html";
+            });
         });
     </script>
 </body>
