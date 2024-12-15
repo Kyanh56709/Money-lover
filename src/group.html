@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/add.css">
+    <!-- <link rel="stylesheet" href="../css/history.css"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+</head>
+
+<style>
+    img{
+        max-width: 40px;
+    }
+</style>
+
+<body>
+    <div class="ctn3  d-flex justify-content-between flex-column">
+        <div class="header3 hd sd d-flex flex-column justify-content-between">
+            <div class="d-flex justify-content-between mt-4">
+                <a href="javascript:history.back()" class=" ms-3 mb-2">
+                    <i class="fa-solid fa-arrow-left text-white"></i>
+                </a>
+                <h5 class="me-3 text-white ms-5">Nhóm</h5>
+                <div class="mb-2 dropdown dropstart">
+                    <i class="fa-solid fa-search text-white me-3"></i>
+                    <i class="fa-solid fa-filter text-white me-3" data-bs-toggle="dropdown"></i>
+                    <ul class="dropdown-menu">
+                        <h5 class="dropdown-item border-bottom" >Sắp xếp nhóm</h5>
+                        <li><a class="dropdown-item active" href="#">Từ A đến Z</a></li>
+                        <li><a class="dropdown-item " href="#">Sử dụng nhiều nhất</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="loaivi">
+                <ul class="nav nav-tabs" style="width: 100%;" role="tablist">
+                    <li class="nav-item" style="width: 33.333%;">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">Khoản chi</a>
+                    </li>
+                    <li class="nav-item" style="width: 33.333%;">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu1">Khoản thu</a>
+                    </li>
+                    <li class="nav-item" style="width: 33.333%;">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Khác</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+
+        <div class="tab-content content" style="overflow-y: auto; ">
+
+            <div id="home" class="container tab-pane active my-4 ">
+                <a href="" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-3" style="width: 100%;">
+                    <div class="d-flex align-items-center a " >
+                        <i class="fa-solid fa-circle-plus fa-xl text-success ms-2"></i>
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Nhóm mới</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/4359/4359781.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Ăn uống</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/11946/11946360.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Bảo hiểm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/11355/11355897.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Di chuyển</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center a" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/7138/7138256.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Gia đình</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/8872/8872331.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Giải trí</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/12730/12730689.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Giáo dục</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/10105/10105235.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Mua sắm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/9597/9597319.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Sức khỏe</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/11448/11448903.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Thể thao</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-chi.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/10305/10305770.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Du lịch</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+
+            </div>
+
+            <div id="menu1" class="container tab-pane fade my-4 ">
+                <a href="them-thu.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/11946/11946452.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Lương</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-thu.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/16361/16361601.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Thu lãi</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-thu.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/5695/5695846.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Chuyển tiền đến</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-thu.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center a" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/10830/10830618.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Khác</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="menu2" class="container tab-pane fade my-4 ">
+                <a href="them-khac.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center a" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/15197/15197050.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Cho tiền</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-khac.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center a" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/15197/15197050.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Nhận tiền</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-khac.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/14870/14870998.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Đi vay</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-khac.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/15197/15197050.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Cho vay</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-khac.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/11746/11746457.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Thu nợ</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="them-khac.html" class=" bg-light rounded px-4 shadow mt-2 btn  p-0 py-2" style="width: 100%;">
+                    <div class="d-flex align-items-center" >
+                        <img src="https://cdn-icons-png.flaticon.com/256/8686/8686029.png" alt="">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Trả nợ</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="modal" id="chitiet">
+        </br></br></br></br></br></br></br>
+        <div class="modal-dialog" style="max-width: 300px;">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Chi tiết</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    
+                    <div class="d-flex align-items-center border-bottom py-3 a" >
+                        
+                        <div class="btn btn-success rounded-circle">
+                            <i class="fa-solid fa-bag-shopping text-white"></i>
+                        </div>
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Ăn uống</h6>
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fa-solid fa-pen me-2"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="blur-text">7/12/2024, 6:50PM</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center  a" >
+                        <div class="btn  rounded-circle">
+                            <i class="fa-solid fa-bag-shopping text-white"></i>
+                        </div>
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="text-danger">3.500.000 </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center  a" >
+                        <div class="btn  rounded-circle">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="">7/12/2024, 6:50PM </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center  a" >
+                        <div class="btn  rounded-circle">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="">Tiền mặt</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="xacnhan">
+        </br></br></br></br></br></br></br>
+        <div class="modal-dialog" style="max-width: 300px;">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-danger">Thông báo</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Thêm giao dịch thành công!</p>
+                    
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <a href="./home.html" class="btn btn-success">Xác nhận</a>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script>
+        const toggleButton = document.getElementById("them");
+
+        function them() {
+            toggleButton.innerHTML = "Thêm chi tiết <i class='fa-solid fa-chevron-up'></i>";
+        }
+
+    </script>
+
+</body>
+</html>

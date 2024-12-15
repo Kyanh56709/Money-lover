@@ -1,0 +1,70 @@
+.nav::-webkit-scrollbar {
+    
+    width: 2px;
+  }
+  
+  /* Đường dẫn của thanh cuộn */
+  .nav::-webkit-scrollbar-track {
+    background: #f1f1f115;
+    border-radius: 5px;
+  }
+  
+  /* Thanh cuộn */
+  .nav::-webkit-scrollbar-thumb {
+    background: rgba(103, 102, 102, 0.6); 
+    border-radius: 5px;
+  }
+
+  /* Khi hover vào thanh cuộn */
+  .nav::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Nút dropdown */
+.dropdown-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Danh sách menu */
+.dropdown-content {
+    display: none; /* Ẩn menu */
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    left: 50%; /* Đặt giữa theo chiều ngang */
+    transform: translateX(-50%); /* Dịch sang trái một nửa để căn giữa */
+}
+
+/* Mỗi mục trong menu */
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Hiệu ứng khi hover từng mục */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hiện dropdown khi hover vào container */
+.dropdown:hover .dropdown-content {
+    display: block; /* Hiển thị menu */
+}
+

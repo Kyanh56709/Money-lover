@@ -1,0 +1,31 @@
+
+.rangeValue {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  font-weight: 400;
+}
+.range {
+  
+  width: 100%;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #ffffff;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #eadede;
+  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 1); */
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 60%;
+  background: #bb42eb;
+  cursor: grab;
+  /* border: 4px solid #333; */
+  box-shadow: -407px 0 0 400px #bb42eb;
+}

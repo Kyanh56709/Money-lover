@@ -1,0 +1,53 @@
+.charts-section {
+    padding: 20px;
+}
+
+.chart-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h4 {
+    margin-bottom: 15px;
+}
+
+.detailed-history {
+    padding: 20px;
+}
+
+.transaction-list {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-details {
+    flex-grow: 1;
+}
+
+.transaction-amount {
+    font-weight: 600;
+}
+
+.transaction-amount.income {
+    color: green;
+}
+
+.transaction-amount.expense {
+    color: red;
+}
