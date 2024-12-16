@@ -1,0 +1,38 @@
+/* Chart container styling */
+#categoryChart {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Transaction list styling */
+.transaction-list {
+    padding: 20px;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-item p {
+    margin: 0;
+}
+
+.transaction-item .amount {
+    font-weight: bold;
+}
+
+.transaction-item .amount.negative {
+    color: red;
+}
+
+.transaction-item .amount.positive {
+    color: green;
+}
